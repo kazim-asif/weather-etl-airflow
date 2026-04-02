@@ -11,6 +11,9 @@ A streamlined ETL (Extract, Transform, Load) workflow orchestrated by **Apache A
 - **Storage:** Uses temporary Parquet files for efficient task-to-task data transfer.
 - **Orchestration:** Fully managed by Airflow DAGs with retry logic and daily scheduling.
 
+## Prerequisites: 
+- Ensure you have an Airflow running
+
 ## Project Structure
 ```text
 ├── dags/
@@ -21,3 +24,11 @@ A streamlined ETL (Extract, Transform, Load) workflow orchestrated by **Apache A
 ├── outputs/
 │   └── cleaned_weather.csv  # Final processed data
 └── README.md
+```
+
+## Tech Stack
+Orchestrator: Apache Airflow
+
+Data Processing: Pandas
+
+Storage Formats: CSV, Apache Parquet
